@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Seitenübersicht des Abenteuers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9e9e9;
+        }
+        .start {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+        .end {
+            font-weight: bold;
+            color: #ff6b00;
+        }
+        .links {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .links:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abenteuer-Pfad Übersicht</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Reihenfolge</th>
+                <th>Seitenname</th>
+                <th>Beschreibung</th>
+                <th>Direkter Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="start">index.html</td>
+                <td>Startseite des Abenteuers</td>
+                <td><a href="index.html" class="links">Zum Start</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>forest.html</td>
+                <td>Der geheimnisvolle Wald</td>
+                <td><a href="forest.html" class="links">Zum Wald</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>path1.html</td>
+                <td>Erster Pfad im Wald</td>
+                <td><a href="path1.html" class="links">Zum Pfad 1</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>path2.html</td>
+                <td>Zweiter Pfad im Wald</td>
+                <td><a href="path2.html" class="links">Zum Pfad 2</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>river.html</td>
+                <td>Der rauschende Fluss</td>
+                <td><a href="river.html" class="links">Zum Fluss</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>village.html</td>
+                <td>Dorf der Weisen</td>
+                <td><a href="village.html" class="links">Zum Dorf</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>mountains.html</td>
+                <td>Schneebedeckte Berge</td>
+                <td><a href="mountains.html" class="links">Zu den Bergen</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>castle.html</td>
+                <td>Das alte Schloss</td>
+                <td><a href="castle.html" class="links">Zum Schloss</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>cave.html</td>
+                <td>Die dunkle Höhle</td>
+                <td><a href="cave.html" class="links">Zur Höhle</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>dragon.html</td>
+                <td>Begegnung mit dem Drachen</td>
+                <td><a href="dragon.html" class="links">Zum Drachen</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>death.html</td>
+                <td>Game Over-Seite</td>
+                <td><a href="death.html" class="links">Zu Game Over</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="end">win.html</td>
+                <td>Gewinn-Seite</td>
+                <td><a href="win.html" class="links">Zum Gewinn</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="index.html" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Zurück zum Abenteuer</a>
+    </div>
+</body>
+</html>

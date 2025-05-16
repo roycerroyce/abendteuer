@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="css/death.css">
+    <style>body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Impact', sans-serif;
+      text-align: center;
+  }
+  
+  .death-message {
+      color: #ff0000;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  .container {
+      padding-top: 100px;
+  }</style>
+</head>
+<body>
+    <div class="container">
+        <h1>GAME OVER</h1>
+        <div class="story">
+            <p>Dein Abenteuer endet hier...</p>
+            <p id="death-reason">(Todesgrund wird hier angezeigt)</p>
+            <a href="index.html">Neues Abenteuer beginnen</a>
+        </div>
+    </div>
+
+    <script>
+        // Zeige unterschiedliche Todesnachrichten basierend auf der vorherigen Seite
+        const deathMessages = {
+            'castle.html': 'Ein Geist hat dich erschreckt!',
+            'path2.html': 'Die Strömung war zu stark!',
+            'dragon.html': 'Der Drache hat dich gegrillt!',
+            'default': 'Du bist gestorben.'
+        };
+        
+        const referrer = document.referrer.split('/').pop() || 'default';
+        document.getElementById('death-reason').textContent = deathMessages[referrer] || deathMessages['default'];
+    </script>
+</body>
+</html>

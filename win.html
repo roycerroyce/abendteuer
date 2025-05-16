@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Gewonnen!</title>
+    <link rel="stylesheet" href="css/win.css">
+    
+    
+    <style>body {
+        background-color: #f8f8d9;
+        background-image: linear-gradient(to bottom, #fff8e1, #f8f8d9);
+        font-family: 'Comic Sans MS', cursive;
+        text-align: center;
+    }
+    
+    .container {
+        padding: 50px;
+    }
+    
+    h1 {
+        color: #ff6b00;
+        font-size: 3em;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        animation: rainbow 4s infinite;
+    }
+    
+    .treasure {
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px gold;
+        max-width: 500px;
+    }
+    
+    .treasure img {
+        max-width: 100%;
+        border: 5px solid gold;
+        border-radius: 5px;
+    }
+    
+    .restart-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 30px;
+        background: linear-gradient(to right, #ff9500, #ff5e00);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 1.2em;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s;
+    }
+    
+    .restart-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+    
+    @keyframes rainbow {
+        0% { color: #ff6b00; }
+        20% { color: #ff0062; }
+        40% { color: #ad00ff; }
+        60% { color: #0051ff; }
+        80% { color: #00ff62; }
+        100% { color: #ff6b00; }
+    }</style></head>
+<body>
+    <div class="container">
+        <h1>🎉 HERZLICHEN GLÜCKWUNSCH! 🎉</h1>
+        <div class="story">
+            <p>Du hast das Abenteuer erfolgreich bestanden!</p>
+            <div class="treasure">
+                <img src="img/treasure.jpg" alt="Schatz">
+                <p>Der legendäre Schatz gehört nun dir!</p>
+            </div>
+            <a href="index.html" class="restart-btn">Neues Abenteuer beginnen</a>
+            <a href="table.html" class="restart-btn">Meinen Pfad anzeigen</a>
+        </div>
+    </div>
+</body>
+</html>
