@@ -1,0 +1,16 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Impact', sans-serif;
+    text-align: center;
+}
+
+.death-message {
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 100px;
+}
